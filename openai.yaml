@@ -4,7 +4,7 @@ info:
   description: Plugin for searching poetry using ChatGPT.
   version: "v1"
 servers:
-  - url: xxx
+  - url: https://gpt-poetry-plugin-production.up.railway.app
 paths:
   /api/v1/get-poetry:
     get:
