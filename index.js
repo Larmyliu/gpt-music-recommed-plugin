@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/.well-known/ai-plugin.json", (req, res) => {
-  const filePath = path.join(__dirname, "/.well-known/ai-plugin.json");
+  const filePath = path.join(__dirname, "./src/.well-known/ai-plugin.json");
 
   res.sendFile(filePath, function (err) {
     if (err) {
@@ -42,7 +42,7 @@ app.get("/.well-known/ai-plugin.json", (req, res) => {
 });
 
 app.get("/.well-known/openai.yaml", (req, res) => {
-  const filePath = path.join(__dirname, "/openai.yaml");
+  const filePath = path.join(__dirname, "./src/openai.yaml");
 
   res.sendFile(filePath, function (err) {
     if (err) {

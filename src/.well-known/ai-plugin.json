@@ -9,7 +9,7 @@
     },
     "api": {
       "type": "openapi",
-      "url": "xxx(待定)",
+      "url": "https://gpt-poetry-plugin-production.up.railway.app",
       "is_user_authenticated": false
     },
     "logo_url": "PLUGIN_HOSTNAME/logo.png",
