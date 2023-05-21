@@ -1,0 +1,43 @@
+openapi: 3.0.1
+info:
+  title: Get poetry Plugin
+  description: Plugin for searching poetry using ChatGPT.
+  version: "v1"
+servers:
+  - url: xxx
+paths:
+  /api/v1/get-weather:
+    get:
+      operationId: getWeather
+      summary: Get the current weather for a specific location
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/getPoetryResponse"
+        "500":
+          description: Error making request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/errorResponse"
+components:
+  schemas:
+    getPoetryResponse:
+      type: object
+      properties:
+        conter:
+          type: string
+        origin:
+          type: string
+        author:
+          type: string
+        category:
+          type: string
+    errorResponse:
+      type: object
+      properties:
+        message:
+          type: string
